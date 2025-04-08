@@ -2,6 +2,9 @@ package fastexcelTest;
 
 import org.dhatim.fastexcel.reader.ReadableWorkbook;
 import org.dhatim.fastexcel.reader.Sheet;
+
+import common.Config;
+
 import org.dhatim.fastexcel.reader.Row;
 import org.dhatim.fastexcel.reader.Cell;
 
@@ -16,7 +19,7 @@ import java.util.stream.StreamSupport;
 
 public class FastExcelTest {
     public static void main(String[] args) {
-        File file = new File("C:\\aa3.xlsx"); // 엑셀 파일 경로
+        File file = new File(Config.FILE_PATH); // 엑셀 파일 경로
 
         if (file.exists()) {
             System.out.println("✅ 파일이 존재합니다: " + file.getAbsolutePath());
@@ -24,7 +27,8 @@ public class FastExcelTest {
             System.out.println("❌ 파일을 찾을 수 없습니다: " + file.getAbsolutePath());
             return;
         }
-
+        
+        long startTime = System.nanoTime(); // 실행 시간 측정 시작
         AtomicInteger totalCellCount = new AtomicInteger(0);
 
         try (FileInputStream fis = new FileInputStream(file);
@@ -54,6 +58,8 @@ public class FastExcelTest {
             e.printStackTrace();
         }
 
+        long endTime = System.nanoTime(); // 실행 시간 측정 끝
         System.out.println("총 셀 수: " + totalCellCount.get());
+        System.out.println("FastExcel Execution Time: " + (endTime - startTime) / 1_000_000 + " ms");
     }
 }

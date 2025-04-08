@@ -22,5 +22,11 @@
 	<classpathentry kind="lib" path="lib/fastexcel-0.18.4.jar"/>
 	<classpathentry kind="lib" path="lib/fastexcel-reader-0.18.4.jar"/>
 	<classpathentry kind="lib" path="lib/stax2-api-4.2.2.jar"/>
+	<classpathentry kind="lib" path="C:/dev/eGovFrameDev-3.9.0-64bit/workspace/test/excelTest/odrExcelTest/lib/commons-collections4-4.4.jar"/>
+	<classpathentry kind="lib" path="C:/dev/eGovFrameDev-3.9.0-64bit/workspace/test/excelTest/odrExcelTest/lib/xmlbeans-3.1.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/jamong/Downloads/commons-math3-3.6.1.jar"/>
+	<classpathentry kind="lib" path="C:/dev/eGovFrameDev-3.9.0-64bit/workspace/test/excelTest/odrExcelTest/lib/poi-4.1.2.jar"/>
+	<classpathentry kind="lib" path="C:/dev/eGovFrameDev-3.9.0-64bit/workspace/test/excelTest/odrExcelTest/lib/poi-ooxml-4.1.2.jar"/>
+	<classpathentry kind="lib" path="C:/dev/eGovFrameDev-3.9.0-64bit/workspace/test/excelTest/odrExcelTest/lib/poi-ooxml-schemas-4.1.2.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
